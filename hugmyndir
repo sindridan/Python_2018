@@ -1,0 +1,19 @@
+1 2 3 4
+2 3 4 5
+(1, 2), (2, 3), (3, 4), (4, 5)
+
+eval(x) í 3
+
+def isFullHouse(hand):
+    cards = [i[0] for i in hand] #Get all the numerals of the cards in hand
+    vCount = defaultdict(lambda:0)
+    for c in cards:
+        vCount[c] += 1 #Count how many of each are in the hand
+    if sorted(vCount.values()) == [2,3]: #Contains two of one card, and three of another
+        return True
+    else:
+        return False
+
+re.findall í minute, punktur eftir staðsetningar strengnum
+
+[\{{1}[a-zA-Z0-9]+\:[a-zA-Z0-9]+[?\}{1}]
